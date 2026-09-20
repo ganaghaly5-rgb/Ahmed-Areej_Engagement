@@ -398,7 +398,7 @@
         <div class="info-col">
           <div class="info-icon">📅</div>
           <div class="info-title">The Date</div>
-          <div class="info-value">Thursday<br>19 / 11 / 2026</div>
+          <div class="info-value">Thursday<br>12 / 11 / 2026</div>
           <div class="info-note">Engagement Day</div>
         </div>
         <div class="info-col">
@@ -410,7 +410,7 @@
         <div class="info-col">
           <div class="info-icon">📍</div>
           <div class="info-title">The Venue</div>
-          <div class="info-value"><a href="https://maps.app.goo.gl/eEojA5cjfRA6keBx9?g_st=aw" target="_blank">View on Maps</a></div>
+          <div class="info-value"><a href="https://maps.app.goo.gl/NkjUBzQq9qKsMLPa7?g_st=aw" target="_blank">View on Maps</a></div>
           <div class="info-note">Event location</div>
         </div>
       </div>
@@ -457,12 +457,12 @@
   (function(){
     var grid = document.getElementById('calGrid');
     var daysInMonth = 30;
-    var eventDay = 19;
+    var eventDay = 12;
     for (var d = 1; d <= daysInMonth; d++){
       var cell = document.createElement('div');
       cell.className = 'day' + (d === eventDay ? ' event' : '');
       if (d === eventDay){
-        cell.innerHTML = '<div class="heart"><span>19</span></div>';
+        cell.innerHTML = '<div class="heart"><span>12</span></div>';
       } else {
         cell.textContent = d;
       }
@@ -471,7 +471,7 @@
   })();
 
   /* Countdown — Thursday, November 19, 2026, 7:00 PM (Cairo, GMT+2) */
-  var eventDate = new Date('2026-11-19T19:00:00+02:00').getTime();
+  var eventDate = new Date('2026-11-12T12:00:00+02:00').getTime();
   function pad(n){ return (n < 10 ? '0' : '') + n; }
   function tick(){
     var diff = eventDate - Date.now();
